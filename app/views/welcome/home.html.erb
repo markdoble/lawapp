@@ -2,4 +2,8 @@
 
   Welcome to my new Law App!
 
+  <% unless user_signed_in? %>
+  <%= render '/devise/sessions/new' %>
+  <%end%>
+
 </h2>
